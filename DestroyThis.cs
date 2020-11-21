@@ -6,6 +6,6 @@ public class DestroyThis : MonoBehaviour
 {
     public void SelfDestroy()
     {
-        Destroy(this.gameObject);
+        Destroy(this.gameObject); // destroy this gameobject
     }
 }
