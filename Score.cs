@@ -9,11 +9,11 @@ public class Score : MonoBehaviour
     public Text PointText;
     void Start()
     {
-        ScorePoint = 0;
+        ScorePoint = 0; // score point = 0
     }
 
     void Update()
     {
-        PointText.text = ScorePoint.ToString();
+        PointText.text = ScorePoint.ToString(); // score text = score point
     }
 }
