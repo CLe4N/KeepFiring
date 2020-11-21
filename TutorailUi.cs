@@ -10,17 +10,17 @@ public class TutorailUi : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 0; // stop time
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1))
+        if(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1)) // if left or right mouse is click
         {
-            Time.timeScale = 1;
-            PlayerUi.SetActive(true);
-            ScoreUi.SetActive(true);
-            Spawner.SetActive(true);
-            Destroy(this.gameObject);
+            Time.timeScale = 1; // time start
+            PlayerUi.SetActive(true); // active PlayerUI
+            ScoreUi.SetActive(true); // active ScoreUi
+            Spawner.SetActive(true); //  active Spawner
+            Destroy(this.gameObject); // destroy this gameobject
         }
     }
 }
