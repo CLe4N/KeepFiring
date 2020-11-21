@@ -9,21 +9,21 @@ public class GameOver : MonoBehaviour
     AudioSource gameOverBGM;
     void Start()
     {
-        sceneName = SceneManager.GetActiveScene().name;
-        gameOverBGM = GetComponent<AudioSource>();
-        gameOverBGM.Play();
+        sceneName = SceneManager.GetActiveScene().name; // get active scene name
+        gameOverBGM = GetComponent<AudioSource>(); // access AudioSource component
+        gameOverBGM.Play(); // play"gameOverBGM"
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(sceneName);
-        Time.timeScale = 1;
+        SceneManager.LoadScene(sceneName); // load this scene
+        Time.timeScale = 1; // timescale = 1
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene("MenuScene");
-        Time.timeScale = 1;
+        SceneManager.LoadScene("MenuScene"); // load menu scene
+        Time.timeScale = 1; // timescale = 1
     }
 
 }
